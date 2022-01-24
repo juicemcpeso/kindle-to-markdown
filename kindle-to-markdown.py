@@ -1,4 +1,4 @@
-# This exports my kindle highlights to markdown
+# This exports kindle highlights to markdown
 
 desired_title = 'Influence (Collins Business Essentials) (Cialdini PhD, Robert B.)'
 filename = 'My Clippings.txt'
