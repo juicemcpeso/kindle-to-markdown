@@ -1,7 +1,7 @@
 # This exports my kindle highlights to markdown
 
 desired_title = 'Influence (Collins Business Essentials) (Cialdini PhD, Robert B.)'
-filename = 'My Clippings Test.txt'
+filename = 'My Clippings.txt'
 
 list_of_highlights = []
 temp_string = []
