@@ -1,7 +1,7 @@
 # This exports kindle highlights to markdown
 
 desired_title = 'Influence (Collins Business Essentials) (Cialdini PhD, Robert B.)'
-filename = 'My Clippings.txt'
+filename = ''
 
 list_of_highlights = []
 temp_string = []
@@ -16,6 +16,9 @@ bookmark_text = '- Your Bookmark on Location '
 
 seperator = '|'
 dash_seperator = '-'
+
+# Ask for file name
+filename = input('Enter file path: ')
 
 with open(filename, encoding='utf-8') as file:
     for index, line in enumerate(file):
