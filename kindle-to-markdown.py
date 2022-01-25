@@ -1,6 +1,6 @@
 # This exports kindle highlights to markdown
 
-desired_title = 'Influence (Collins Business Essentials) (Cialdini PhD, Robert B.)'
+desired_title = ''
 filename = ''
 
 list_of_highlights = []
@@ -19,6 +19,9 @@ dash_seperator = '-'
 
 # Ask for file name
 filename = input('Enter file path: ')
+
+# Ask for book text to match
+desired_title = input('Enter title of book: ')
 
 with open(filename, encoding='utf-8') as file:
     for index, line in enumerate(file):
