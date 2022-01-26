@@ -53,6 +53,9 @@ with open(filename, encoding='utf-8') as file:
             elif line.strip() == '':
                 pass
 
+            elif bookmark_text in line:
+                pass
+
             # Toggle highlight (to add >), remove date information
             elif highlight_text in line:
                 is_highlight = True
