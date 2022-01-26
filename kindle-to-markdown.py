@@ -18,6 +18,8 @@ bookmark_text = '- Your Bookmark on Location '
 seperator = '|'
 dash_seperator = '-'
 
+header_string = '## Location '
+
 # Ask for file name
 filename = input('Enter file path: ')
 
@@ -60,7 +62,7 @@ with open(filename, encoding='utf-8') as file:
                 stripped = line.split(seperator, 1)[0]
                 location_string = stripped.replace(highlight_text, '')
                 location_int = int(location_string.split(dash_seperator, 1)[0])
-                formatted_header = '## Location ' + location_string
+                formatted_header = header_string + location_string
 
                 if list_of_highlights:
                     for sublist in list_of_highlights:
