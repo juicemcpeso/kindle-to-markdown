@@ -1,5 +1,7 @@
 # Converts the My Clippings file of kindle highlights to a Markdown format.
 
+from tkinter import Tk
+
 desired_title = ''
 filename = ''
 output_string = ''
@@ -115,5 +117,12 @@ for i in deindexed_list:
         output_string += j
         output_string += '\n'
 
-print(output_string)
+r = Tk()
+r.withdraw()
+r.clipboard_clear()
+r.clipboard_append(output_string)
+r.update()
+r.destroy
+
+print('Copied to clipboard')
             
