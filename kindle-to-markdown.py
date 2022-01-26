@@ -1,7 +1,8 @@
-# Converts the My Clippings file of kindle highlights to a markdown format.
+# Converts the My Clippings file of kindle highlights to a Markdown format.
 
 desired_title = ''
 filename = ''
+output_string = ''
 
 list_of_highlights = []
 temp_string = []
@@ -108,7 +109,11 @@ sorted_highlights = sorted(list_of_highlights)
 
 deindexed_list = [sublist[2:] for sublist in sorted_highlights]
 
+
 for i in deindexed_list:
     for j in i:
-        print(j, sep='/n') 
+        output_string += j
+        output_string += '\n'
+
+print(output_string)
             
