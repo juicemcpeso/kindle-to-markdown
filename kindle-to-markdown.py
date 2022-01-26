@@ -1,4 +1,4 @@
-# This exports kindle highlights to markdown
+# Converts the My Clippings file of kindle highlights to a markdown format.
 
 desired_title = ''
 filename = ''
@@ -42,8 +42,6 @@ with open(filename, encoding='utf-8') as file:
                 is_highlight = False
                 is_note = False
                 is_duplicate = False
-
-
 
             # Skip lines with the title in them
             elif desired_title in line:
