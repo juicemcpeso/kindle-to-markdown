@@ -113,4 +113,3 @@ for i in deindexed_list:
     for j in i:
         output_string += j
         output_string += '\n'
-            
