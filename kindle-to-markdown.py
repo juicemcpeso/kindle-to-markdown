@@ -1,6 +1,7 @@
 # Converts the My Clippings file of kindle highlights to a markdown format.
 
 import pandas as pd
+from pandas.io import clipboard
 
 desired_title = ''
 filename = ''
@@ -116,5 +117,4 @@ for i in deindexed_list:
         output_string += j
         output_string += '\n'
 
-from pandas.io import clipboard
 clipboard.copy(output_string)
