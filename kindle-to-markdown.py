@@ -2,6 +2,7 @@
 
 desired_title = ''
 filename = ''
+output_string = ''
 
 list_of_highlights = []
 temp_string = []
@@ -110,5 +111,6 @@ deindexed_list = [sublist[2:] for sublist in sorted_highlights]
 
 for i in deindexed_list:
     for j in i:
-        print(j, sep='/n') 
+        output_string += j
+        output_string += '\n'
             
