@@ -125,4 +125,3 @@ r.update()
 r.destroy
 
 print('Copied to clipboard')
-            
