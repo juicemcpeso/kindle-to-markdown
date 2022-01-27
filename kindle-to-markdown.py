@@ -1,4 +1,6 @@
-# Converts the My Clippings file of kindle highlights to a markdown format.
+# Converts the My Clippings file of kindle highlights to a Markdown format.
+
+from tkinter import Tk
 
 desired_title = ''
 filename = ''
@@ -109,7 +111,17 @@ sorted_highlights = sorted(list_of_highlights)
 
 deindexed_list = [sublist[2:] for sublist in sorted_highlights]
 
+
 for i in deindexed_list:
     for j in i:
         output_string += j
         output_string += '\n'
+
+r = Tk()
+r.withdraw()
+r.clipboard_clear()
+r.clipboard_append(output_string)
+r.update()
+r.destroy
+
+print('Copied to clipboard')
